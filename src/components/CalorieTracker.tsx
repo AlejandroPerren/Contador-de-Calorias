@@ -3,7 +3,7 @@ import { useActivity } from "../hooks/useActivity"
 
 export default function CalorieTracker() {
 
-    const { caloriesConsumed, caloriesBurned, netCalories } = useActivity()
+    const { caloriesConsumed, caloriesBurned, netCalories} = useActivity()
     
     return (
         <>

@@ -33,7 +33,7 @@ export default function Form() {
   }
 
   const isValidActivity = () => {
-    const { name, calories } = activity
+    const {name, calories } = activity
     return name.trim() !== '' && calories > 0
   }
  

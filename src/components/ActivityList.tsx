@@ -1,5 +1,6 @@
-import { PencilSquareIcon, XCircleIcon } from '@heroicons/react/24/outline'
+import { TiDeleteOutline } from "react-icons/ti";
 import { useActivity } from "../hooks/useActivity"
+import { HiOutlinePencilAlt } from "react-icons/hi";
 
 export default function ActivityList() {
 
@@ -31,7 +32,7 @@ export default function ActivityList() {
                             <button
                                 onClick={() => dispatch({type: "set-activeId", payload: {id: activity.id}})}
                             >
-                                <PencilSquareIcon
+                                <HiOutlinePencilAlt
                                     className="h-8 w-8 text-gray-800"
                                 />
                             </button>
@@ -39,7 +40,7 @@ export default function ActivityList() {
                             <button
                                 onClick={() => dispatch({type: "delete-activity", payload: {id: activity.id}})}
                             >
-                                <XCircleIcon
+                                <TiDeleteOutline 
                                     className="h-8 w-8 text-red-500"
                                 />
                             </button>
